@@ -44,22 +44,26 @@ def stats(update, context):
     mem_t = get_readable_file_size(memory.total)
     mem_a = get_readable_file_size(memory.available)
     mem_u = get_readable_file_size(memory.used)
-    stats = f'<b>Commit Date:</b> {last_commit}\n'\
-            f'<b>Bot Uptime:</b> {currentTime}\n'\
-            f'<b>OS Uptime:</b> {osUptime}\n'\
-            f'<b>Total Disk Space:</b> {total}\n'\
-            f'<b>Used:</b> {used} | <b>Free:</b> {free}\n'\
-            f'<b>Upload:</b> {sent}\n'\
-            f'<b>Download:</b> {recv}\n'\
-            f'<b>CPU:</b> {cpuUsage}%\n'\
-            f'<b>RAM:</b> {mem_p}%\n'\
-            f'<b>DISK:</b> {disk}%\n'\
-            f'<b>Physical Cores:</b> {p_core}\n'\
-            f'<b>Total Cores:</b> {t_core}\n'\
-            f'<b>SWAP:</b> {swap_t} | <b>Used:</b> {swap_p}%\n'\
-            f'<b>Memory Total:</b> {mem_t}\n'\
-            f'<b>Memory Free:</b> {mem_a}\n'\
-            f'<b>Memory Used:</b> {mem_u}\n'
+    stats =  f'<b>╭──「☣️ тєямι ѕтαтѕ ☣️」</b>\n' \
+            f'<b>│</b>\n' \
+            f'<b>├⌬ Lᴀsᴛ Cᴏᴍᴍɪᴛ→</b> {last_commit}\n'\
+            f'<b>├⌬ Uᴘᴛɪᴍᴇ→</b> {currentTime}\n'\
+            f'<b>├⌬ OS Uᴘᴛɪᴍᴇ→</b> {osUptime}\n'\
+            f'<b>├⌬ Tᴏᴛᴀʟ Dɪsᴋ→</b> {total}\n'\
+            f'<b>├⌬ Usᴇᴅ→</b> {used}\n'\
+            f'<b>├⌬ Fʀᴇᴇ→</b> {free}\n'\
+            f'<b>├⌬ Uᴘʟᴏᴀᴅ→</b> {sent}\n'\
+            f'<b>├⌬ Dᴏᴡɴʟᴏᴀᴅ→</b> {recv}\n'\
+            f'<b>├⌬ Cᴘᴜ→</b> {cpuUsage}%\n'\
+            f'<b>├⌬ Rᴀᴍ→</b> {mem_p}%\n'\
+            f'<b>├⌬ Dɪsᴋ→</b> {disk}%\n'\
+            f'<b>├⌬ Pʜʏsɪᴄᴀʟ Cᴏʀᴇs→</b> {p_core}\n'\
+            f'<b>├⌬ Tᴏᴛᴀʟ Cᴏʀᴇs→</b> {t_core}\n'\
+            f'<b>├⌬ Sᴡᴀᴘ→</b> {swap_t}\n'\
+            f'<b>├⌬ Usᴇᴅ→</b> {swap_p}%\n'\
+            f'<b>├⌬ Tᴏᴛᴀʟ→</b> {mem_t}\n'\
+            f'<b>├⌬ Fʀᴇᴇ→</b> {mem_a}\n'\
+            f'<b>╰─ Usᴇᴅ→</b> {mem_u}\n'
     sendMessage(stats, context.bot, update.message)
 
 
